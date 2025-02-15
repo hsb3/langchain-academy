@@ -1,24 +1,34 @@
-![LangChain Academy](https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/66e9eba1020525eea7873f96_LCA-big-green%20(2).svg)
+# Intro to LangGraph [2/14/25]
+
 
 ## Introduction
 
-Welcome to LangChain Academy! 
-This is a growing set of modules focused on foundational concepts within the LangChain ecosystem. 
-Module 0 is basic setup and Modules 1 - 4 focus on LangGraph, progressively adding more advanced themes. 
-In each module folder, you'll see a set of notebooks. A LangChain Academy accompanies each notebook 
-to guide you through the topic. Each module also has a `studio` subdirectory, with a set of relevant 
-graphs that we will explore using the LangGraph API and Studio.
+**Welcome to LangChain Academy!**
+
+> In each module folder, you'll see:
+>> - instructional Jupyter notebooks.
+>> -  a `studio` subdirectory, with 
+graphs to use with `LangGraph Studio/API`.
+
+**Overview of module contents:**
+- Module 0: basic setup
+- Module 1: 
+
+---
 
 ## Setup
-
 ### Python version
 
-To get the most out of this course, please ensure you're using Python 3.11 or later. 
-This version is required for optimal compatibility with LangGraph. If you're on an older version, 
-upgrading will ensure everything runs smoothly.
+You need to run Python 3.11 or later. 
+Check your version and upgrade if necessary.
+
+**check**
 ```
 python3 --version
 ```
+**upgrade**
+
+
 
 ### Clone repo
 ```
@@ -33,13 +43,7 @@ $ python3 -m venv lc-academy-env
 $ source lc-academy-env/bin/activate
 $ pip install -r requirements.txt
 ```
-#### Windows Powershell
-```
-PS> python3 -m venv lc-academy-env
-PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-PS> lc-academy-env\scripts\activate
-PS> pip install -r requirements.txt
-```
+
 
 ### Running notebooks
 If you don't have Jupyter set up, follow installation instructions [here](https://jupyter.org/install).
@@ -54,10 +58,7 @@ use a `.env` file with `python-dotenv` library.
 ```
 $ export API_ENV_VAR="your-api-key-here"
 ```
-#### Windows Powershell
-```
-PS> $env:API_ENV_VAR = "your-api-key-here"
-```
+
 
 ### Set OpenAI API key
 * If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/).
