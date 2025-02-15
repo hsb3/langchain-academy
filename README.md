@@ -96,3 +96,26 @@ for i in {1..6}; do
 done
 echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
+
+---
+1. (Optional) Install JupyterLab for an alternative interfact
+    ```bash
+    brew install jupyterlab
+    ``` 
+
+> now you can exec `jupyter` commands like opening a notebook or lab
+
+
+2. (pip) Create a virtual environment, activate, install requirements:
+
+    ```bash
+    ENV_NAME=lc-academy-env && python3 -m venv $ENV_NAME && source $ENV_NAME/bin/activate && pip install -r requirements.txt
+    ```
+
+3. add .env file with necessary API keys 
+
+4. run load_env.py 
+    ```python 
+    python3 load_env.py
+    ```
+---
